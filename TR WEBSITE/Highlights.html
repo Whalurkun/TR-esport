@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="styleMaterialize.css">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="stylesheet" rel="stylesheet" href="Sass/Test.SASS"/>
+    <title>Materialize</title>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+        <div class="navbar-fixed">
+    <nav>
+    <div class="nav-wrapper red darken-3">
+      <a href="#!" class="brand-logo center TRlogo"><img src="LogoWhite.png" alt="logo" width="100px"></a>
+      <a href="" data-target="mobile-nav" class="sidenav-trigger">
+        <i class="material-icons white-text text-darken-4">menu</i>
+      </a>
+      <ul class="left hide-on-med-and-down">
+        <li><a href="home.html"><span class="white-text">Home</span></a></li>
+        <li><a href="info.html"><span class="white-text">Info</span></a></li>
+        <li><a href="Players.html"><span class="white-text">Players</span></a></li>
+        <li><a href="Sponsors.html"><span class="white-text">Sponsors</span></a></li>
+        <li class="active"><a href="Highlights.html"><span class="white-text">Highlights</span></a></li>
+      </ul>
+    </div>
+  </nav>
+    </div>
+  <ul class="sidenav red darken-4" id="mobile-nav">
+      <li><a href="home.html"><span class="white-text">Home</span></a></li>
+      <li><a href="info.html"><span class="white-text">Info</span></a></li>
+      <li><a href="Players.html"><span class="white-text">Players</span></a></li>
+      <li><a href="Sponsors.html"><span class="white-text">Sponsors</span></a></li>
+      <li class="active"><a href="Highlights.html"><span class="white-text">Highlights</span></a></li>
+  </ul>
+</div>
+
+</script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+  </script>     
+  </body>
+</html>
