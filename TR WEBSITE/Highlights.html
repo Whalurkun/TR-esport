@@ -3,11 +3,13 @@
   <head>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/heebo" type="text/css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Import materialize.css-->
     <link rel="stylesheet" href="styleMaterialize.css">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link type="stylesheet" rel="stylesheet" href="Sass/Test.SASS"/>
-    <title>Materialize</title>
+    <title>TR E-Sport</title>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
@@ -15,6 +17,13 @@
   <body>
         <div class="navbar-fixed">
     <nav>
+        <ul id="dropdown1" class="dropdown-content red darken-3">
+            <li><a href="#!">Rocket League</a></li>
+            <li><a href="#!">Overwatch</a></li>
+            <!--<li class="divider"></li>-->
+            <li><a href="#!">CS:GO</a></li>
+            <li><a href="#!">Fortnite</a></li>
+            </ul>
     <div class="nav-wrapper red darken-3">
       <a href="#!" class="brand-logo center TRlogo"><img src="LogoWhite.png" alt="logo" width="100px"></a>
       <a href="" data-target="mobile-nav" class="sidenav-trigger">
@@ -23,7 +32,7 @@
       <ul class="left hide-on-med-and-down">
         <li><a href="index.html"><span class="white-text">Home</span></a></li>
         <li><a href="info.html"><span class="white-text">Info</span></a></li>
-        <li><a href="Players.html"><span class="white-text">Players</span></a></li>
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Players<i class="material-icons right">arrow_drop_down</i></a></li>
         <li><a href="Sponsors.html"><span class="white-text">Sponsors</span></a></li>
         <li class="active"><a href="Highlights.html"><span class="white-text">Highlights</span></a></li>
       </ul>
@@ -38,14 +47,71 @@
       <li class="active"><a href="Highlights.html"><span class="white-text">Highlights</span></a></li>
   </ul>
 </div>
+<h2 style="color:white; text-align: center; margin-top:5%;font-family: 'HeeboThin', serif;">Rocket League Montage</h2>
+<hr style="width: 640px;">
+<div style="margin: 5% auto; width: 640px; margin-bottom: 10%;"> 
+<video width="640	" height="360" controls style="-webkit-box-shadow: 0px 0px 44px 8px rgba(136,136,136,.15);
+-moz-box-shadow: 0px 0px 44px 8px rgba(136,136,136,.15);
+box-shadow: 0px 0px 44px 8px rgba(136,136,136,.15);">
+    <source src="vid/RocketLeague.mp4" type="video/mp4">
+    <source src="vid/RocketLeague.ogg" type="video/ogg">
+      Sorry, your browser doesn't support HTML5
+  </video>
+</div>
 
-</script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script>
+      AOS.init();
+      $(document).ready(function () {
+          $('.slider').slider({height: 700, indicators: false});
+      });
       $(document).ready(function(){
     $('.sidenav').sidenav();
   });
-  </script>     
+  </script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(".dropdown-trigger").dropdown();
+        $('.your-class').slick({
+        });
+      });
+    </script>
   </body>
+  <!-- FOOTER -->
+
+  <footer class="page-footer red darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">About TR</h5>
+          <p class="grey-text text-lighten-4">It's an E-sport team.......</p>
+        </div>
+        <div class="col l3 offset-l0 s12">
+            <h5 class="white-text">CONTACT</h5>
+            <p class="grey-text text-lighten-4">Mail@tr-esport.com</p>
+            <p class="grey-text text-lighten-4">[Some other Contact-Data]</p>
+          </div>
+        <!--<div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+          </ul>
+        </div> -->
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2019 TR E-Sport
+      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
+  </footer>
 </html>
