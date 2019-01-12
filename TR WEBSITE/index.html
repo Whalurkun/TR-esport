@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="styleMaterialize.css">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/heebo" type="text/css"/>
+    <title>TR E-Sport</title>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+
+      <script src="js/jssor.slider-27.5.0.min.js" type="text/javascript"></script>
+      <script type="text/javascript">
+          jssor_1_slider_init = function() {
+  
+              var jssor_1_SlideoTransitions = [
+                [{b:-1,d:1,o:-0.7}],
+                [{b:900,d:2000,x:-379,e:{x:7}}],
+                [{b:900,d:2000,x:-379,e:{x:7}}],
+                [{b:-1,d:1,o:-1,sX:2,sY:2},{b:0,d:900,x:-171,y:-341,o:1,sX:-2,sY:-2,e:{x:3,y:3,sX:3,sY:3}},{b:900,d:1600,x:-283,o:-1,e:{x:16}}]
+              ];
+  
+              var jssor_1_options = {
+                $AutoPlay: 1,
+                $SlideDuration: 800,
+                $SlideEasing: $Jease$.$OutQuint,
+                $CaptionSliderOptions: {
+                  $Class: $JssorCaptionSlideo$,
+                  $Transitions: jssor_1_SlideoTransitions
+                },
+                $ArrowNavigatorOptions: {
+                  $Class: $JssorArrowNavigator$
+                },
+                $BulletNavigatorOptions: {
+                  $Class: $JssorBulletNavigator$
+                }
+              };
+  
+              var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+  
+              /*#region responsive code begin*/
+  
+              var MAX_WIDTH = 3000;
+  
+              function ScaleSlider() {
+                  var containerElement = jssor_1_slider.$Elmt.parentNode;
+                  var containerWidth = containerElement.clientWidth;
+  
+                  if (containerWidth) {
+  
+                      var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+  
+                      jssor_1_slider.$ScaleWidth(expectedWidth);
+                  }
+                  else {
+                      window.setTimeout(ScaleSlider, 30);
+                  }
+              }
+  
+              ScaleSlider();
+  
+              $Jssor$.$AddEvent(window, "load", ScaleSlider);
+              $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+              $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+              /*#endregion responsive code end*/
+          };
+      </script>
+
+    <div class="navbar-fixed">
+    <nav>
+    <ul id="dropdown1" class="dropdown-content red darken-3">
+  <li><a href="#!">Rocket League</a></li>
+  <li><a href="#!">Overwatch</a></li>
+  <!--<li class="divider"></li>-->
+  <li><a href="#!">CS:GO</a></li>
+  <li><a href="#!">Fortnite</a></li>
+  </ul>
+    <div class="nav-wrapper red darken-3">
+      <a href="#!" class="brand-logo center TRlogo"><img src="LogoWhite.png" alt="logo" width="100px"></a>
+      <a href="" data-target="mobile-nav" class="sidenav-trigger">
+        <i class="material-icons white-text text-darken-4">menu</i>
+      </a>
+      <ul class="left hide-on-med-and-down">
+        <li class="active"><a href="#"><span class="white-text">Home</span></a></li>
+        <li><a href="info.html"><span class="white-text">Info</span></a></li>
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Players<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a href="Sponsors.html"><span class="white-text">Sponsors</span></a></li>
+        <li><a href="Highlights.html"><span class="white-text">Highlights</span></a></li>
+      </ul>
+    </div>
+  </nav>
+    </div>
+  <ul class="sidenav red darken-4" id="mobile-nav">
+    <li class="active"><a href="#"><span class="white-text">Home</span></a></li>
+    <li><a href="info.html"><span class="white-text">Info</span></a></li>
+    <li><a href="Players.html"><span class="white-text">Players</span></a></li>
+    <li><a href="Sponsors.html"><span class="white-text">Sponsors</span></a></li>
+    <li><a href="Highlights.html"><span class="white-text">Highlights</span></a></li>
+  </ul>
+</div>
+  <section class="home">
+      <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1920px;height:700px;overflow:hidden;visibility:hidden;">
+          <!-- Loading Screen -->
+          <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:1920px;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+              <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+          </div>
+          <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1920px;height:700px;overflow:hidden;">
+              <div>
+                  <a target="_blank" href="https://www.manatee.gg/products/tr-e-sport-jersey"><img data-u="image" src="img/shirtBlack.png" /> </a>
+              </div>
+              <div>
+                  <a><img data-u="image" src="img/DiscordBlack.png" /> </a>
+              </div>
+              <div>
+                  <a><img data-u="image" src="img/Gathering.png" /> </a>
+                  </div>
+          </div>
+      </div>
+      <script type="text/javascript">jssor_1_slider_init();</script>
+</section>
+
+<!-- ABOUT SECTION-->
+<section class="info">
+<!-- <h2 style="text-align: center; margin-top: 120px; color:white;">ABOUT</h3>
+  <hr style="width: 100px;" data-aos="fade">
+  <br>
+  <div class="About">
+  <h5 data-aos="fade">
+    We created this club as 3 friends who enjoyed playing together, <br>
+    we then played just for fun in the Telenorliga.br <br>
+    The season did not last that long since we had to withdraw, <br>
+    however in January 2018 we put up a player application <br>
+    on Gamer.no, which 10 people replied to. <br>
+    This was the beginning of our Rocket League team. 
+  </h5>
+  <img src="img/About/RocketLeague.png" alt="" style="margin-top: 50px; max-height: 100%;" data-aos="fade">
+  <hr style="width: 100px;" data-aos="fade">
+  <br>
+  <h5 data-aos="fade">
+    After the foundation of this team we entered <br>
+    into an agreement with Røros Infonett AS, <br>
+    and exactly this deal is what made the <br>
+    team start to blossom. 
+  </h5>
+  <img src="img/About/TR-Esport.png" alt="" style="margin-top: 50px; max-height: 100%;" data-aos="fade">
+  <hr style="width: 100px;" data-aos="fade">
+  <br>
+  <h5 data-aos="fade">
+    After another month we took over Frantic E-Sports, <br>
+    which then became Frantic TR E-Sports and also <br>
+    our first Norwegian Overwatch team. 
+  </h5>
+  <img src="img/About/OverwatchTransparent.png" alt="" style="margin-top: 50px; max-height: 100%;" data-aos="fade">
+  <hr style="width: 100px;" data-aos="fade">
+  <br>
+  <h5 data-aos="fade">
+    After the success of an Overwatch team we attempted <br>
+    to start up a Counterstrike: Global Offensive team, <br>
+    but sadly without any luck. 
+  </h5>
+  <img src="img/About/CSGOTransparent.png" alt="" style="margin-top: 50px; max-height: 100%;" data-aos="fade">
+  <hr style="width: 100px;" data-aos="fade">
+  <br>
+  <h5 data-aos="fade">
+    We then entered into an sponsor agreement with Tolga Os Sparebank,<br>
+    which is our main sponsor, which led to an international Overwatch team,<br>
+    who has made huge progress.
+  </h5> 
+  <img src="img/About/Tolga.png" alt="" style="margin-top: 50px; max-height: 100%;" data-aos="fade">
+  <hr style="width: 100px;" data-aos="fade">
+  <br>
+  </div> -->
+<h2>Our Story</h2>
+<div class="grid-container">
+  <div><img src="img/RocketLeague.png" alt="" data-aos="fade-right"></div>
+  <div class="Text">
+  <p data-aos="fade-left">We created this club as 3 friends who enjoyed playing together,
+    we then played just for fun in the Telenorliga
+    The season did not last that long since we had to withdraw,
+    however in January 2018 we put up a player application
+    on Gamer.no, which 10 people replied to.
+    This was the beginning of our Rocket League team.</p>
+  </div>
+  <div>
+  <img src="img/OverwatchLogo.png" alt="" data-aos="fade-right">
+  </div>
+  <div>
+  <p data-aos="fade-left">After the foundation of this team we entered
+    into an agreement with Røros Infonett AS,
+    and exactly this deal is what made the
+    team start to blossom. After another month we took over Frantic E-Sports,
+    which then became Frantic TR E-Sports and also
+    our first Norwegian Overwatch team.</p>
+  </div>
+  <div><img src="img/CSGO-Symbol.jpg" alt="" data-aos="fade-right"></div>
+  <div><p data-aos="fade-left">After the success of an Overwatch team we attempted
+    to start up a Counterstrike: Global Offensive team,
+    but sadly without any luck.</p></div>
+  <div><img src="img/Bank.jpg" alt="" data-aos="fade-right"></div>
+  <div><p data-aos="fade-left">
+    We then entered into an sponsor agreement with Tolga Os Sparebank,
+    which is our main sponsor, which led to an international Overwatch team,
+    who has made huge progress.</p></div>
+</div>
+
+  </section> 
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+      AOS.init();
+      $(document).ready(function () {
+          $('.slider').slider({height: 700, indicators: false});
+      });
+      $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+  </script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(".dropdown-trigger").dropdown();
+        $('.your-class').slick({
+        });
+      });
+    </script>
+  </body>
+  
+  <!-- FOOTER -->
+
+  <footer class="page-footer red darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">About TR</h5>
+          <p class="grey-text text-lighten-4">It's an E-sport team.......</p>
+        </div>
+        <div class="col l3 offset-l0 s12">
+            <h5 class="white-text">CONTACT</h5>
+            <p class="grey-text text-lighten-4">Mail@tr-esport.com</p>
+            <p class="grey-text text-lighten-4">[Some other Contact-Data]</p>
+          </div>
+        <!--<div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+          </ul>
+        </div> -->
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2019 TR E-Sport
+      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
+  </footer>
+</html>
