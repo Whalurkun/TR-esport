@@ -72,7 +72,36 @@ footer p {
     height: 80px;
     margin-bottom: 15%;
 }
-@media only screen and (max-width: 1300px) {
+.sponsors hr {
+    width: 350px;
+}
+.bank {height: 125px;}
+.Infonett{height:35px; margin-top:100px;}
+.InterSport{height:35px; margin-top:100px;}
+.ManaTee{height:35px; margin-top:100px;}
+.Text2 {line-height: 1.1; margin-top:100px;}
+
+.Highlights hr{
+    width: 640px;
+}
+
+.center {
+    margin: 0 auto;
+    display: block
+    }
+
+@media only screen and (max-width: 1100px) {
+video { 
+    width:auto;
+    max-width:300px;
+    height:auto;
+    }
+.Highlights hr{
+    width: 280px;
+}
+.Highlights h2 {
+    font-size: 25px;
+}
     .info {
         height: 600px;
     }
@@ -97,6 +126,35 @@ footer p {
 .info h2 {
     font-size: 25px;
 }
+.sponsors p {
+    line-height: 1.1; margin-top:100px;
+}
+.sponsors h2 {
+    font-size: 25px;
+    margin-bottom: 0;
+}
+.sponsors hr { 
+    width: 160px;
+    margin-bottom: 7%;
+}
+.sponsors img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7%;
+}
+.sponsors p {
+    font-size: 10px;
+    margin: 15% 10% 20% 10%;
+}
+.sponsors {
+    height: 100%;
+}
+.bank {height: 50px;margin-top: 25px;}
+.Infonett{height: 20px;margin-top: 5px;}
+.InterSport{height: 25px;margin-top: 5px;}
+.ManaTee{height: 25px;margin-top: 5px;}
+.sponsors p {margin-top:10px;}
 }
 /*@media only screen and (max-width: 1365px) {
 .info img {

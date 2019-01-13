@@ -46,29 +46,34 @@
       <li><a href="Highlights.html"><span class="white-text">Highlights</span></a></li>
   </ul>
 </div>
+<section class="sponsors">
 <h2 style="color:white; text-align: center; margin-top:5%;font-family: 'HeeboThin', serif;">Our Sponsors</h2>
-<hr style="width: 350px;">
+<hr>
 <div class="grid-container" style="margin-top:10%; margin-bottom: 30%;font-family: 'HeeboLight', serif;">
-    <div><img src="img/sponsors/Bank.png" alt="" data-aos="fade-up" style="height:125px;"></div>
+    <div><img src="img/sponsors/Bank.png" alt="" class="bank" data-aos="fade-up"></div>
     <div class="Text"><p data-aos="fade-up" style="line-height: 1.1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, exercitationem animi architecto
       ab cupiditate ut voluptas cumque ex numquam doloribus quia laborum temporibus aliquid assumenda inventore debitis, non enim officiis.</p></div>
-    <div><img src="img/sponsors/InfonettRoros.png" alt="" data-aos="fade-up" style="height:35px; margin-top:100px;"></div>
-    <div class="Text"><p data-aos="fade-up" style="line-height: 1.1; margin-top:100px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, exercitationem animi architecto
+    <div><img src="img/sponsors/InfonettRoros.png" alt="" data-aos="fade-up" class="Infonett"></div>
+    <div class="Text"><p data-aos="fade-up" class="Text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, exercitationem animi architecto
         ab cupiditate ut voluptas cumque ex numquam doloribus quia laborum temporibus aliquid assumenda inventore debitis, non enim officiis.</p></div>
-<div><img src="img/sponsors/InterSport.png" alt="" data-aos="fade-up" style="height:35px; margin-top:100px;"></div>
-    <div class="Text"><p data-aos="fade-up" style="line-height: 1.1; margin-top:100px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, exercitationem animi architecto
+<div><img src="img/sponsors/InterSport.png" alt="" class="InterSport" data-aos="fade-up"></div>
+    <div class="Text"><p data-aos="fade-up" class="Text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, exercitationem animi architecto
         ab cupiditate ut voluptas cumque ex numquam doloribus quia laborum temporibus aliquid assumenda inventore debitis, non enim officiis.</p></div>
-      <div><img src="img/sponsors/ManaTee.png" alt="" data-aos="fade-up" style="height:35px; margin-top:100px;"></div>
-    <div class="Text"><p data-aos="fade-up" style="line-height: 1.1; margin-top:100px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, exercitationem animi architecto
+      <div><img src="img/sponsors/ManaTee.png" alt="" data-aos="fade-up" class="ManaTee"></div>
+    <div class="Text"><p data-aos="fade-up" class="Text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, exercitationem animi architecto
         ab cupiditate ut voluptas cumque ex numquam doloribus quia laborum temporibus aliquid assumenda inventore debitis, non enim officiis.</p></div>
       </div>
     </div>
 </div>
+</section>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript">
           AOS.init();
+          $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
       $(document).ready(function(){
         $(".dropdown-trigger").dropdown();
         $('.your-class').slick({
