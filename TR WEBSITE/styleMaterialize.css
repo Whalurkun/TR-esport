@@ -9,8 +9,27 @@ background-size: 800% 800%;
 -o-animation: AnimationName 30s ease infinite;
 animation: AnimationName 30s ease infinite;
 }
+nav .brand-logo img {
+    vertical-align: 0 !important;
+}
+a:hover{color:white;text-decoration:unset}
 p {
     color:white;
+}
+.card {
+    background-color: #12100e;
+}
+.card-body {
+    background-color: #12100e;
+}
+.card-header {
+    background-color: #12100e;
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+.mb-0 {
+text-align: center;
 }
 hr {
   margin-block-start: 0.5em;

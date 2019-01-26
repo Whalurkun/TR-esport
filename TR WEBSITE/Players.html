@@ -2,6 +2,7 @@
 <html>
   <head>
     <!--Import Google Icon Font-->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link rel="stylesheet" href="styleMaterialize.css">
@@ -29,7 +30,7 @@
       <ul class="left hide-on-med-and-down">
         <li><a href="index.html"><span class="white-text">Home</span></a></li>
         <li><a href="info.html"><span class="white-text">Info</span></a></li>
-        <li class="active"><a class="dropdown-trigger" href="#!" data-target="dropdown1">Players<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a href="Players.html"><span class="white-text">Players</span></a></li>
         <li><a href="Sponsors.html"><span class="white-text">Sponsors</span></a></li>
         <li><a href="Highlights.html"><span class="white-text">Highlights</span></a></li>
       </ul>
@@ -44,10 +45,80 @@
       <li><a href="Highlights.html"><span class="white-text">Highlights</span></a></li>
   </ul>
 </div>
+
+<div class="accordion" class="blueok" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne" style="background-image: url(img/Teams/Overwatch.png);">
+      <h2 class="mb-0">
+        <p>Overwatch Team</p>
+        <button class="btn waves-effect waves white" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color:black">
+            LEARN MORE
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        <img src="http://lorempixel.com/200/400" alt="lorem">
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo" style="background-image: url(img/Teams/CSGO.png);">
+      <h2 class="mb-0">
+          <p>CSGO Team</p>
+          <button class="btn waves-effect waves white" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" style="color:black">
+              LEARN MORE
+          </button>
+        </h2>
+      </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div class="card-body">
+            <img src="http://lorempixel.com/200/400" alt="lorem">
+          </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree" style="background-image: url(img/Teams/Fortnite.png);">
+        <h2 class="mb-0">
+            <p>Fortnite Team</p>
+            <button class="btn waves-effect waves white" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree" style="color:black">
+                LEARN MORE
+            </button>
+          </h2>
+        </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body">
+              <img src="http://lorempixel.com/200/400" alt="lorem">
+            </div>
+      </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingFour" style="background-image: url(img/Teams/RocketLeague.png);">
+            <h2 class="mb-0">
+                <p>Rocket League Team</p>
+                <button class="btn waves-effect waves white" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour" style="color:black">
+                    LEARN MORE
+                </button>
+              </h2>
+            </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <div class="card-body">
+                  <img src="http://lorempixel.com/200/400" alt="lorem">
+                </div>
+          </div>
+        </div>
+  </div>
+</div>
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script>
+      $('.collapse').collapse()
       $(document).ready(function(){
     $('.sidenav').sidenav();
   });
