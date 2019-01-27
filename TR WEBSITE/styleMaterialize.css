@@ -80,13 +80,39 @@ footer p {
   margin-top:0;
 }
 
-.grid-container {
+.OurStory .grid-container {
   margin:7% 20% 7% 20%;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 40% 40% 30% 30%;
   grid-gap: 10px;
 }
+.Players .grid-container {
+    margin:7% 10% 7% 10%;
+    display: grid;
+    grid-template-columns: 16% 20% 16% 20% 16% 20%;
+    grid-template-rows: 50% 50% 50% 50%;
+    grid-gap: 10px;
+  }
+  .Players img {
+      margin-right: 10%;
+  }
+  .collapse.in, .collapse{
+    height: 1500px;
+    overflow-y: hidden;
+    max-height:1500px;
+  }
+  #instrument.collapsing{
+      max-height:1500px;
+  }
+  .Players h2 {
+      position: relative;
+      line-height: 110% !important;
+  }
+  .Player h1, h2, h3, h4, h5, h6, h7{
+      color:white !important;
+      line-height: 5% !important;
+  }
 .info img {
     height: 80px;
     margin-bottom: 15%;
