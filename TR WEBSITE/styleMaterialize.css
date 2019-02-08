@@ -56,9 +56,9 @@ footer p {
     box-shadow: 0px 11px 29px 4px rgba(0,0,0,0.50);
 }
 .info {
-  font-family: 'HeeboThin', serif; 
-  font-weight: normal; 
-  font-style: normal; 
+  font-family: 'HeeboThin', serif;
+  font-weight: normal;
+  font-style: normal;
   display: block;
   color:white;
   height: 1300px;
@@ -68,7 +68,7 @@ footer p {
   margin-top: 10%;
 }
 .info p {
-  font-family: 'HeeboLight', serif; 
+  font-family: 'HeeboLight', serif;
   line-height: 1.1;
   text-align: left;
   display: block;
@@ -86,6 +86,20 @@ footer p {
   grid-template-columns: 50% 50%;
   grid-template-rows: 40% 40% 30% 30%;
   grid-gap: 10px;
+}
+.sponsors .grid-container {
+  margin:7% 20% 7% 20%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 40% 40% 30% 30%;
+  grid-gap: 10px;
+}
+.gridText {
+    margin:7% 5% 7% 5% !important;
+    grid-template-columns: 25% 25% 25% 25% !important;
+}
+.gridText h5 {
+    margin: -10% 0 .656rem 0 !important;
 }
 .Players .grid-container {
     margin:7% 10% 7% 10%;
@@ -106,7 +120,7 @@ footer p {
   }
   .Player h1, h2, h3, h4, h5, h6, h7{
       color:white !important;
-      line-height: 5% !important;
+      line-height: 50px !important;
   }
 .info img {
     height: 80px;
@@ -132,7 +146,7 @@ footer p {
 
 @media only screen and (max-width: 1100px) {
 .Players .grid-container {
-    margin:7% 10% 7% 10%;
+    margin:7% 25% 7% 25%;
     display: inline;
   }
   .Players img {
@@ -154,7 +168,7 @@ footer p {
   .Player h5 {
     margin-bottom: 40% !important;
   }
-video { 
+video {
     width:auto;
     max-width:300px;
     height:auto;
@@ -190,13 +204,13 @@ video {
     font-size: 25px;
 }
 .sponsors p {
-    line-height: 1.1; margin-top:100px;
+    line-height: 1.1; margin-top:100px; margin-left: 25%;
 }
 .sponsors h2 {
     font-size: 25px;
     margin-bottom: 0;
 }
-.sponsors hr { 
+.sponsors hr {
     width: 160px;
     margin-bottom: 7%;
 }
@@ -240,4 +254,3 @@ video {
 .TRlogo {
     color:white;
 }
-  
